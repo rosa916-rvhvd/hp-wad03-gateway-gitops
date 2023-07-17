@@ -1,0 +1,15 @@
+app:
+  name: hp-wad03-poi-gateway-app
+  namespace: hp-wad03
+  cluster: .apps.rosa916.9nln.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/rosa916-rvhvd/hp-wad03-gateway
+  org: rosa916-rvhvd
+  name: hp-wad03-gateway
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: hp-wad03/poi-gateway-app
+  tag: latest

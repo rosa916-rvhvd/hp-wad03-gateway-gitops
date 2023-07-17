@@ -1,0 +1,10 @@
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: hp-wad03-poi-gateway-app-repo
+  namespace: janus-argocd
+  labels:
+    argocd.argoproj.io/secret-type: repository
+stringData:
+  url: https://github.com/rosa916-rvhvd/hp-wad03-gateway-gitops
